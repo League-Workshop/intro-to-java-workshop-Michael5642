@@ -5,8 +5,7 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class FourSquare {
 	
-	// 2. Create a new Robot
-
+	Robot wallE=new Robot();
 	void go() {
 		// 4. Make the robot move as fast as possible
 
@@ -17,7 +16,22 @@ public class FourSquare {
 			// 7. Set the pen color to random
 	
 			// 1. Call the drawSquare() method
+
+		for (int i = 0; i < 4; i++) {
+		wallE.setSpeed(100);
+		wallE.setRandomPenColor();
+		wallE.setPenWidth(5);
+		wallE.penDown();
+		wallE.move(200);
+		wallE.turn(90);
+		
+	} 
+	drawSquare();
 	
+	
+		
+		
+		
 			// 8. Turn the robot 90 degrees to the right
 
 	}
